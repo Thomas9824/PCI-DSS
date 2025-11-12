@@ -1,0 +1,12 @@
+# Ignore stored reference files
+stored_references/*.csv
+
+# Keep the directory structure
+!stored_references/.gitkeep
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python

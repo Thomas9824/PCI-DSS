@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# PyInstaller
+build/
+*.spec.backup
+*.manifest
+*.exe.log
+
+# Environments
+venv/
+ENV/
+env/
+build_env_win/
+.venv/
+
+# Backups et fichiers temporaires
+*_backup_*.csv
+changes_report_*.txt
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.logs
+
+# PyInstaller build artifacts
+build/
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Node (au cas où)
+node_modules/
+package-lock.json

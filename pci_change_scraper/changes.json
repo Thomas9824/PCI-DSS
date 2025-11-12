@@ -1,0 +1,277 @@
+{
+  "new_documents": [],
+  "updated_versions": [],
+  "removed_documents": [],
+  "unchanged_documents": [
+    {
+      "name": "PCI DSS",
+      "version": "v4.0.1 - Jun. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "PCI DSS Summary of Changes",
+      "version": "v4.0 to v4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "Prioritized Approach for PCI DSS",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "Prioritized Approach Tool",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "PCI DSS Quick Reference Guide",
+      "version": "v4.x - Jan. 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "PCI DSS v4.0 At a Glance",
+      "version": "v4.0 - Dec. 2022",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "ASV Resource Guide",
+      "version": "Jul. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "Guidance for PCI DSS Requirements 6.4.3 and 11.6.1",
+      "version": "Apr. 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "TRA Guidance",
+      "version": "Nov. 2023",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "Vulnerability Management Infographic",
+      "version": "May 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "ROC Template",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "ROC Template Summary of Changes",
+      "version": "v4.0 to v4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "Extra Compensating Controls Worksheet",
+      "version": "v4.x - Apr. 2023",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "Supplemental ROC Template - Designated Entities",
+      "version": "V4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "PCI DSS AOC - Merchants",
+      "version": "v4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "PCI DSS AOC - Service Providers",
+      "version": "v4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "Supplemental AOC - Designated Entities",
+      "version": "v4.0.1 - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC for ROC - Service Providers Extra Form - Part 2g",
+      "version": "v4.x - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "Sample Templates: Customized Approach",
+      "version": "v4.x - Aug. 2024\nv4.x - Nov. 2023\nv4.x - Nov. 2023",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "Sample Template: TRA for Activity Frequency",
+      "version": "v4.x - Nov. 2023",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "FAQs for Designated Entities Supplemental Validation",
+      "version": "Jun. 2022",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "FAQs for use with ROC Template",
+      "version": "v4.x - Aug. 2024",
+      "category": "PCI DSS",
+      "available_languages": "EN"
+    },
+    {
+      "name": "SAQ Instructions and Guidelines",
+      "version": "v4.0.1 - Apr. 2025",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ A",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ A-EP",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ B",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ B-IP",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ C",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ C-VT",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ D Merchant",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ D Service Provider",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ P2PE",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "SAQ SPoC",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ",
+      "available_languages": "EN, ZH, FR, DE, JA, PT, ES"
+    },
+    {
+      "name": "Extra Compensating Controls Worksheet",
+      "version": "v4.x - Apr. 2023",
+      "category": "SAQ",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC for SAQ D - Service Providers Extra Form - Part 2g",
+      "version": "v4.x - Aug. 2023",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ A",
+      "version": "v4.0.1 - Jan. 2025",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ A-EP",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ B",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ B-IP",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ C",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ C-VT",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ D - Merchants",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ D - Service Providers",
+      "version": "v4.0.1 - Dec. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ P2PE",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    },
+    {
+      "name": "AOC SAQ SPoC",
+      "version": "v4.0.1 - Oct. 2024",
+      "category": "SAQ AOC",
+      "available_languages": "EN"
+    }
+  ]
+}

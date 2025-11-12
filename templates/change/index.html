@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCI-DSS Changes Manager</title>
+    <link rel="stylesheet" href="/change/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/change/dot-loader.js"></script>
+    <script src="/change/changes.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="/" class="home-btn" title="Return to homepage">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <h1>PCI-DSS Changes Manager</h1>
+            </div>
+            <div class="header-right">
+                <div class="header-actions-top">
+                    <a href="/historic" class="historic-btn">
+                        <span class="historic-indicator">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="historic-ping" cx="12" cy="12" r="8" fill="currentColor" opacity="0.75"/>
+                                <circle class="historic-dot" cx="12" cy="12" r="8" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span>Historic</span>
+                    </a>
+                    <div class="last-updated-badge">
+                        <span class="last-updated-label">Last updated:</span>
+                        <span id="last-updated-date">Saturday, 13 April 2019</span>
+                    </div>
+                </div>
+                <div class="header-actions-bottom">
+                    <button id="load-data-btn" onclick="loadPCIDocuments()">
+                        <div class="btn-content">
+                            <div class="dot-loader" id="dot-loader">
+                                <!-- 49 dots (7x7 grid) -->
+                            </div>
+                            <span class="btn-text">Run Scraper</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="summary-stats" id="summary-stats">
+            <div class="stat-card status-pending" id="status-card">
+                <div class="stat-item">
+                    <div class="status-badge" id="status-badge">
+                        <span id="status-indicator">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #ffc107;">
+                                <circle class="status-ping" cx="12" cy="12" r="8" fill="currentColor" opacity="0.75"/>
+                                <circle class="status-dot" cx="12" cy="12" r="8" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="status-badge-text">Status</span>
+                    </div>
+                    <div id="status-message" style="font-size: 1.1rem; font-weight: 300; color: #fff; margin-bottom: 0.5rem;">Run the scraper to check for updates or view the <a href="/historic" class="historic-link">historic</a></div>
+                    <div id="status-details"></div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Documents: <span id="total-docs" class="stat-value">0</span></h3>
+                <h3 style="margin-top: 1.5rem;">Categories: <span id="total-categories" class="stat-value">0</span></h3>
+                <div class="category-breakdown" id="category-breakdown"></div>
+            </div>
+        </div>
+
+        <section id="documents-table-container">
+            <div id="documents-summary"></div>
+            <table id="documents-table">
+                <thead>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Version</th>
+                        <th>Category</th>
+                        <th>Available Languages</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody id="documents-tbody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

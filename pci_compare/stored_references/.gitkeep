@@ -1,0 +1,2 @@
+# This file ensures the stored_references directory is tracked in git
+# Reference CSV files will be stored here but are ignored by .gitignore

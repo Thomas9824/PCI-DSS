@@ -1,0 +1,34 @@
+[
+  {
+    "type": "updated",
+    "date": "2025-10-10T09:37:46.181674",
+    "name": "PCI DSS AOC - Merchants",
+    "category": "PCI DSS",
+    "old_version": "v4.0.1 - Aug. 2023",
+    "new_version": "v4.0.1 - Aug. 2024"
+  },
+  {
+    "type": "updated",
+    "date": "2025-10-10T09:41:52.144869",
+    "name": "SAQ A-EP",
+    "category": "SAQ",
+    "old_version": "v4.0.1 - Oct. 2023",
+    "new_version": "v4.0.1 - Oct. 2024"
+  },
+  {
+    "type": "updated",
+    "date": "2025-10-10T10:26:00.429506",
+    "name": "FAQs for use with ROC Template",
+    "category": "PCI DSS",
+    "old_version": "v4.x - Aug. 2023",
+    "new_version": "v4.x - Aug. 2024"
+  },
+  {
+    "type": "updated",
+    "date": "2025-10-10T10:26:00.429506",
+    "name": "SAQ D Service Provider",
+    "category": "SAQ",
+    "old_version": "v4.0.1 - Jan. 2023",
+    "new_version": "v4.0.1 - Jan. 2025"
+  }
+]

@@ -1,0 +1,27 @@
+<div class="header-actions-top">
+    <a href="/historic" class="historic-btn">
+        <span class="historic-indicator">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="historic-ping" cx="12" cy="12" r="8" fill="currentColor" opacity="0.75"/>
+                <circle class="historic-dot" cx="12" cy="12" r="8" fill="currentColor"/>
+            </svg>
+        </span>
+        <span>Historic</span>
+    </a>
+    <div class="last-updated-badge">
+        <span class="last-updated-label">Last updated:</span>
+        <span id="last-updated-date">Saturday, 13 April 2019</span>
+    </div>
+</div>
+<div class="header-actions-bottom">
+    <button id="load-data-btn" onclick="loadPCIDocuments()">
+        <div class="btn-content">
+            <div class="dot-loader" id="dot-loader">
+                <!-- 49 dots (7x7 grid) -->
+            </div>
+            <span class="btn-text">Run Scraper</span>
+        </div>
+    </button>
+</div>
+</div>
+</div>

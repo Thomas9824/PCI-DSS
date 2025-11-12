@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCI DSS PDF Requirements Extractor</title>
+    <link rel="stylesheet" href="/converter2/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <script src="/converter2/dot-loader.js"></script>
+    <script src="/converter2/converter.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="/" class="home-btn" title="Return to homepage">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div>
+                <h1>PDF Requirements Extractor</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="extractor-controls">
+            <div class="language-selector">
+                <label for="language-select">Select Language:</label>
+                <select id="language-select">
+                    <option value="EN">English (EN)</option>
+                    <option value="FR">French (FR)</option>
+                </select>
+            </div>
+
+            <button id="extract-btn" onclick="runPDFExtractor()">
+                <div class="btn-content">
+                    <div class="dot-loader" id="dot-loader">
+                        <!-- 49 dots (7x7 grid) -->
+                    </div>
+                    <span class="btn-text">Extract Requirements</span>
+                </div>
+            </button>
+        </section>
+
+        <section id="file-upload-section">
+            <div class="upload-container">
+                <div class="drag-drop-zone" id="drag-drop-zone">
+                    <div class="upload-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Upload PCI DSS SAQ D Document</h3>
+                    <p>Drag and drop your PDF file here or click anywhere to browse</p>
+                    <input type="file" id="file-input" accept=".pdf" style="display: none;">
+                </div>
+                <div class="file-info" id="file-info" style="display: none;">
+                    <div class="file-details">
+                        <span class="file-name" id="file-name"></span>
+                        <span class="file-size" id="file-size"></span>
+                    </div>
+                    <button class="remove-file-btn" onclick="removeFile()">✕</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="status-section" style="display: none;">
+            <div id="status-message"></div>
+        </section>
+
+        <section id="results-section" style="display: none;">
+            <h2>Extraction Results</h2>
+            <div class="download-buttons" id="download-buttons">
+                <!-- Download buttons will be inserted here -->
+            </div>
+
+            <!-- DOCX with Tags Status Container -->
+            <div id="docx-status-container" class="docx-status-container" style="display: none;">
+                <div class="docx-status-card">
+                    <div class="docx-status-header">
+                        <span class="docx-status-icon" id="docx-status-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="status-ping" cx="12" cy="12" r="8" fill="currentColor" opacity="0.75"/>
+                                <circle class="status-dot" cx="12" cy="12" r="8" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="docx-status-title">DOCX Generation Status</span>
+                    </div>
+                    <div class="docx-status-message" id="docx-status-message"></div>
+                    <div class="docx-status-details" id="docx-status-details"></div>
+                </div>
+            </div>
+
+            <div id="results-summary"></div>
+
+            <div class="results-tabs">
+                <button class="tab-btn active" onclick="showTab('requirements')">Requirements</button>
+                <button class="tab-btn" onclick="showTab('statistics')">Statistics</button>
+            </div>
+
+            <div id="requirements-tab" class="tab-content active">
+                <div class="table-container">
+                    <table id="requirements-table">
+                        <thead>
+                            <tr>
+                                <th class="actions-header"></th>
+                                <th>Requirement #</th>
+                                <th>Text</th>
+                                <th>Tests</th>
+                                <th>Guidance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="requirements-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="statistics-tab" class="tab-content">
+                <div id="statistics-content">
+                    <!-- Statistics will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
